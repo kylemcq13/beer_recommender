@@ -24,6 +24,7 @@ cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
 
 #Construct a reverse mapping of indices and beer names, and drop duplicate names, if any
 indices = pd.Series(df.index, index=df['Name']).drop_duplicates()
+all_titles = [df['beer_name'][i] for i in range(len(df['beer_name']))]
 
 # Function that takes in beer name as input and gives recommendations 
 def content_recommender(title, cosine_sim=cosine_sim, df=df, indices=indices):

@@ -23,7 +23,8 @@ tfidf_matrix = tfidf_model.fit_transform(corpus).todense()
 cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
 
 #Construct a reverse mapping of indices and beer names, and drop duplicate names, if any
-indices = pd.Series(df.index, index=df['Name']).drop_duplicates()
+df = df.reset_index()
+indices = pd.Series(df.index, index=df['beer_name']).drop_duplicates()
 all_titles = [df['beer_name'][i] for i in range(len(df['beer_name']))]
 
 # Function that takes in beer name as input and gives recommendations 

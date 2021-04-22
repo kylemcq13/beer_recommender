@@ -1,2 +1,0 @@
-model/beer_text4.csv filter=lfs diff=lfs merge=lfs -text
-model/beer_text5.csv filter=lfs diff=lfs merge=lfs -text

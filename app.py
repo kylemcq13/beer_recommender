@@ -7,11 +7,11 @@ from sklearn.metrics.pairwise import linear_kernel
 
 app = flask.Flask(__name__, template_folder='html_templates')
 
-url = 'https://raw.githubusercontent.com/kylemcq13/beer_recommender/master/model/beer_text5.csv'
+url = 'https://raw.githubusercontent.com/kylemcq13/beer_recommender/master/model/beer_text7.csv'
 df = pd.read_csv(url, error_bad_lines=False)
 
 #using lemmatized_text, create the corpus
-corpus = df['adjectives/nouns']
+corpus = df['adj/nouns']
 
 #FEATURE EXTRACTION
 tfidf_model = TfidfVectorizer(max_features=500,

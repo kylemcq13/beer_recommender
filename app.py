@@ -7,8 +7,7 @@ from sklearn.metrics.pairwise import linear_kernel
 
 app = flask.Flask(__name__, template_folder='html_templates')
 
-url = 'https://raw.githubusercontent.com/kylemcq13/beer_recommender/master/model/beer_text7.csv'
-df = pd.read_csv(url, error_bad_lines=False)
+df = pd.read_csv('model/beer_text7.csv', error_bad_lines=False)
 
 #using lemmatized_text, create the corpus
 corpus = df['adj/nouns']

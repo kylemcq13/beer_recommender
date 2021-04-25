@@ -59,7 +59,7 @@ def main():
             for i in range(len(result_final)):
                 names.append(result_final.iloc[i][0])
                 style.append(result_final.iloc[i][1])
-                breweries.append(result_final.iloc[i][1])
+                breweries.append(result_final.iloc[i][2])
 
 
             return flask.render_template('positive.html',beer_names=names,beer_style=style,brewery=breweries,

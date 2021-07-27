@@ -23,6 +23,8 @@ notes maybe a hint of citrus. Quite smooth on the palate a touch bitter and defi
 advertised. Somewhat of a dry finish and something about the lingering taste is off. The mouth coating is 
 a touch creamy."
 
+![WordCloud](https://github.com/kylemcq13/beer_recommender/blob/master/images/wordcloud.PNG "Beer Review Text WordCloud")
+
 ## Content Recommender:
 The beer recommender was built using a content recommender system, which looks for similarities in text in
 the free text reviews. 

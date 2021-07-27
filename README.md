@@ -27,10 +27,12 @@ the free text reviews.
 If you entered Founders Brewing Company's Breakfast Stout as a beer you like, these are the beers that would
 be recommended to you.
 
-![content reco output](beer_recommender/images/content_rec_output.png "Content Recommender Example Output")
+![Content Recommender Output](https://github.com/kylemcq13/beer_recommender/blob/master/images/content_rec_output.PNG "Content Recommender Example Output")
 
 ## Collaborative Filtering:
 Using the surprise library, fit and tuned the data with the SVD algorithm. 
+
+![Collaborative Filter Metrics](https://github.com/kylemcq13/beer_recommender/blob/master/images/collab_filter_metrics.PNG "Collaborative Filter Metrics")
 
 ## Hybrid Model:
 This model is a content/collaborative filter hybrid. Using the highest scoring SVD model and the content 
@@ -41,7 +43,7 @@ each recommended beer.
 If you were user 4608 and entered Cigar City's Jai Alai IPA, the below are the recommendations you would 
 receive.
 
-![hybrid reco output](beer_recommender/images/hybrid_rec_output.png "Hybrid Recommender Example Output")
+![hybrid reco output](https://github.com/kylemcq13/beer_recommender/blob/master/images/hybrid_rec_output.PNG "Hybrid Recommender Example Output")
 
 
 

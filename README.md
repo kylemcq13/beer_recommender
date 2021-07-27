@@ -1,5 +1,7 @@
 # beer_recommender
 
+Check out the app here --> https://beer-recommender-km.herokuapp.com
+
 ## Problem Statement: 
 Recommend wonderful beers for a beer geek like myself. The recommender should take in a beer the user
 likes and return some logical recommendations.

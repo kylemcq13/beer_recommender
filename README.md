@@ -6,6 +6,8 @@ Check out the app here --> https://beer-recommender-km.herokuapp.com
 Recommend wonderful beers for a beer geek like myself. The recommender should take in a beer the user
 likes and return some logical recommendations.
 
+Three recommenders were built - a content recommender, a collaborative filter, and a hybrid of the two.
+
 ## Data Description: 
 Data was obtained from Beer Advocate's beer review site. Reviewers can rate beers numerically based on 
 look, smell, taste, and feel. They also leave A LOT of text reviews which have significant value.
@@ -16,10 +18,10 @@ Each beer category (look, smell, taste, and feel) is rated 1-5, 1 being the wors
 ### Beer Text Reviews:
 Reviewers can also leave free text reviews for a beer. See below an example:
 
-Poured a bit lively and had to wait for it to settle very nice lacing. Slightly hazy golden straw. Floral 
+"Poured a bit lively and had to wait for it to settle very nice lacing. Slightly hazy golden straw. Floral 
 notes maybe a hint of citrus. Quite smooth on the palate a touch bitter and definitely a pungent finish as 
 advertised. Somewhat of a dry finish and something about the lingering taste is off. The mouth coating is 
-a touch creamy.
+a touch creamy."
 
 ## Content Recommender:
 The beer recommender was built using a content recommender system, which looks for similarities in text in
